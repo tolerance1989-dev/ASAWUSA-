@@ -74,17 +74,17 @@ const Login = () => {
         <div style={styles.logoContainer}>
           <img 
             src="/logo.png" 
-            alt="Logo" 
+            alt="ASAWUSA ERP Logo" 
             style={styles.logo}
             onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/100x100?text=Logo'
+              e.target.src = 'https://via.placeholder.com/150x150?text=ASAWUSA+ERP'
               e.target.onerror = null
             }}
           />
         </div>
         
         <h2 style={styles.title}>
-          {isLogin ? 'Welcome Back' : 'Create Account'}
+          ASAWUSA ERP
         </h2>
         
         <p style={styles.subtitle}>
@@ -189,20 +189,21 @@ const styles = {
     marginBottom: '30px'
   },
   logo: {
-    width: '100px',
-    height: '100px',
+    width: '150px',
+    height: '150px',
     objectFit: 'contain',
-    borderRadius: '30px',
-    boxShadow: '8px 8px 16px #bebebe, -8px -8px 16px #ffffff',
-    padding: '10px',
+    borderRadius: '40px',
+    boxShadow: '12px 12px 20px #bebebe, -12px -12px 20px #ffffff',
+    padding: '15px',
     background: '#e0e0e0'
   },
   title: {
     textAlign: 'center',
     color: '#333',
-    fontSize: '28px',
+    fontSize: '32px',
     marginBottom: '10px',
-    fontWeight: '600'
+    fontWeight: '700',
+    letterSpacing: '1px'
   },
   subtitle: {
     textAlign: 'center',
